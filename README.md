@@ -1,5 +1,3 @@
-# Gelar Rasa 2026 – Analisis Kualitas Udara dan Kesehatan
-
 ## Tentang Proyek
 
 Proyek ini dikembangkan untuk lomba **Gelar Rasa 2026** dengan memanfaatkan data kualitas udara dan data kesehatan. Analisis dilakukan untuk melihat kondisi kualitas udara berdasarkan lokasi dan waktu, serta mengeksplorasi keterkaitannya dengan data kesehatan.
