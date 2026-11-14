@@ -81,27 +81,7 @@ Data harian dikategorikan sebagai representatif apabila memiliki minimal **18 ja
 
 Variabel `is_representative` digunakan untuk menandai data yang memenuhi kriteria tersebut. Data yang tidak memenuhi kriteria tetap disimpan agar informasi pengamatan tidak hilang, tetapi perlu diperhatikan ketika melakukan analisis.
 
-## Struktur Repository
-
-```text
-Gelar-Rasa-2026/
-│
-├── data/
-│   ├── dashboard_daily.csv
-│   └── dashboard_pola_jam.csv
-│
-├── notebooks/
-│   └── preprocessing_eda.ipynb
-│
-├── README.md
-│
-└── ...
-```
-
-*Struktur folder di atas merupakan contoh. Sesuaikan nama folder dan file dengan struktur repository yang digunakan.*
-
-## Teknologi yang Digunakan
-
+## Library yang Digunakan
 - Python
 - Pandas
 - NumPy
@@ -109,37 +89,9 @@ Gelar-Rasa-2026/
 - Seaborn
 - Jupyter Notebook
 
-## Cara Menggunakan Dataset
-
-Pastikan Python dan library yang diperlukan sudah tersedia. Dataset dapat dibaca menggunakan Pandas:
-
-```python
-import pandas as pd
-
-# Membaca dataset utama
-dashboard_daily = pd.read_csv(
-    'data/dashboard_daily.csv',
-    parse_dates=['date']
-)
-
-# Membaca dataset pola jam
-dashboard_pola_jam = pd.read_csv(
-    'data/dashboard_pola_jam.csv'
-)
-
-# Memilih data harian representatif
-daily_rep = dashboard_daily[
-    dashboard_daily['is_representative'] == True
-].copy()
-```
-
-## Catatan
-
+## Kesimpulan
 - Dataset final merupakan hasil pengolahan dari tahapan preprocessing dan EDA.
 - Nilai ekstrem tidak otomatis dihapus karena perlu pemeriksaan lebih lanjut untuk menentukan apakah nilai tersebut merupakan kondisi aktual atau anomali pengukuran.
 - Data yang tidak memenuhi kriteria representatif tetap dipertahankan dalam dataset.
 - Interpretasi hasil analisis perlu mempertimbangkan kelengkapan data, satuan pengukuran, dan karakteristik setiap sensor.
-
-## Penutup
-
-Melalui proyek Gelar Rasa 2026, pengolahan dan analisis data kualitas udara serta kesehatan diharapkan dapat memberikan gambaran yang lebih informatif mengenai kondisi lingkungan dan indikator kesehatan. Hasil pengolahan disajikan melalui dashboard agar informasi lebih mudah dipahami dan dieksplorasi.
+informatif mengenai kondisi lingkungan dan indikator kesehatan. Hasil pengolahan disajikan melalui dashboard agar informasi lebih mudah dipahami dan dieksplorasi.
