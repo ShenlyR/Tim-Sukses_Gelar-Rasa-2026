@@ -91,7 +91,6 @@ Variabel `is_representative` digunakan untuk menandai data yang memenuhi kriteri
 
 ## Kesimpulan
 - Dataset final merupakan hasil pengolahan dari tahapan preprocessing dan EDA.
-- Nilai ekstrem tidak otomatis dihapus karena perlu pemeriksaan lebih lanjut untuk menentukan apakah nilai tersebut merupakan kondisi aktual atau anomali pengukuran.
+- Nilai ekstrem tidak dihapus untuk menentukan apakah nilai merupakan kondisi aktual atau anomali pengukuran.
 - Data yang tidak memenuhi kriteria representatif tetap dipertahankan dalam dataset.
 - Interpretasi hasil analisis perlu mempertimbangkan kelengkapan data, satuan pengukuran, dan karakteristik setiap sensor.
-informatif mengenai kondisi lingkungan dan indikator kesehatan. Hasil pengolahan disajikan melalui dashboard agar informasi lebih mudah dipahami dan dieksplorasi.
